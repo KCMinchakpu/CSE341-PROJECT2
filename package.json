@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/KCMinchakpu/CSE341-PROJECT2/issues"
   },
-  "homepage": "https://github.com/KCMinchakpu/CSE341-PROJECT2#readme"
+  "homepage": "https://github.com/KCMinchakpu/CSE341-PROJECT2#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
