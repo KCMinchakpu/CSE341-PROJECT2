@@ -1,0 +1,27 @@
+{
+  "name": "cse341-project2",
+  "version": "1.0.0",
+  "description": "This is my second Project in CSE 341. This project will perform CRUD operations on a MongoDB Database.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KCMinchakpu/CSE341-PROJECT2.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Mongodb",
+    "Express",
+    "Nodemon",
+    "Swagger",
+    "API"
+  ],
+  "author": "Kevin Cross Minchakpu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KCMinchakpu/CSE341-PROJECT2/issues"
+  },
+  "homepage": "https://github.com/KCMinchakpu/CSE341-PROJECT2#readme"
+}
