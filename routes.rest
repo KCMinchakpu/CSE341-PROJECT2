@@ -1,0 +1,104 @@
+//LOCALHOST
+### Get all Books Details
+GET http://localhost:8085/books HTTP/1.1
+
+### Get single contact by Id (Programming for Absolute Beginners)
+GET http://localhost:8085/books/65af07af1de1c77790af2624 HTTP/1.1
+
+### (Practical Node.js)
+GET http://localhost:8085/books/65af08001de1c77790af2625 HTTP/1.1
+
+### (Eloquent JavaScript)
+GET http://localhost:8085/books/65af08251de1c77790af2626 HTTP/1.1
+
+### (A Practical Guide to Cloud Migration)
+GET http://localhost:8085/books/65af08451de1c77790af2627 HTTP/1.1
+
+### (Node.js - The Complete Guide)
+GET http://localhost:8085/books/65af086b1de1c77790af2628
+
+
+### Create new Book Details
+POST http://localhost:8085/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "bookISBN": "",
+    "bookTitle": "",
+    "bookDescription": "",
+    "authorName": "",
+    "releaseDate": "",
+    "publisher": "",
+    "price": "",
+}
+
+### Update Book Details  (By ID)
+PUT http://localhost:8085/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "bookISBN": "",
+    "bookTitle": "",
+    "bookDescription": "",
+    "authorName": "",
+    "releaseDate": "",
+    "publisher": "",
+    "price": "",
+}
+
+### Delete Book Detail (By ID)
+DELETE http://localhost:8085/books/xxxxxxxxx HTTP/1.1
+
+//Render
+### Get all Books Details
+GET https://project2-part1-sos6.onrender.com/books HTTP/1.1
+
+
+// Get Book Details based on ID
+###  (Programming for Absolute Beginners)
+GET https://project2-part1-sos6.onrender.com/books/65af07af1de1c77790af2624 HTTP/1.1
+
+### (Practical Node.js)
+GET https://project2-part1-sos6.onrender.com/books/65af08001de1c77790af2625 HTTP/1.1
+
+### (Eloquent JavaScript)
+GET https://project2-part1-sos6.onrender.com/books/65af08251de1c77790af2626 HTTP/1.1
+
+### (A Practical Guide to Cloud Migration)
+GET https://project2-part1-sos6.onrender.com/books/65af08451de1c77790af2627 HTTP/1.1
+
+### (Node.js - The Complete Guide)
+GET https://project2-part1-sos6.onrender.com/books/65af086b1de1c77790af2628 HTTP/1.1
+
+
+
+### Create new Book Details
+POST https://project2-part1-sos6.onrender.com/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "bookISBN": "",
+    "bookTitle": "",
+    "bookDescription": "",
+    "authorName": "",
+    "releaseDate": "",
+    "publisher": "",
+    "price": "",
+}
+
+### Update Book Details (By ID)
+PUT https://project2-part1-sos6.onrender.com/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "bookISBN": "",
+    "bookTitle": "",
+    "bookDescription": "",
+    "authorName": "",
+    "releaseDate": "",
+    "publisher": "",
+    "price": "",
+}
+
+### Delete a Book Details (By ID)
+DELETE https://project2-part1-sos6.onrender.com/books HTTP/1.1
