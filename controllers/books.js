@@ -21,7 +21,7 @@ const getSingleBookdetails = async (req, res) => {
         const result = await mongodb            
             .getDatabase()
             .db()
-            .collection('contacts')
+            .collection('books')
             .find({ _id: bookId});
         result.toArray().then((books) => {
             res.setHeader('Content-Type', 'application/json');
