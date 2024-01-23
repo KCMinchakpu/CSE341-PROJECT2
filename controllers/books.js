@@ -11,6 +11,7 @@ const getAllBooksdetails = async (req, res) => {
         result.toArray().then((books) => {
             res.setHeader('Content-Type', 'application/json');
             res.status(200).json(books);
+            
         });
     };
 
