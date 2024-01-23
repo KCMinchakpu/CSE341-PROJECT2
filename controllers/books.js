@@ -17,7 +17,7 @@ const getAllBooksdetails = async (req, res) => {
 
 //Read (GET) one contact (based on Id) in the database
 const getSingleBookdetails = async (req, res) => { 
-         const contactId = new ObjectId(req.params.id);
+         const bookId = new ObjectId(req.params.id);
         const result = await mongodb            
             .getDatabase()
             .db()
