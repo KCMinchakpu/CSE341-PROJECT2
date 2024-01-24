@@ -55,7 +55,7 @@ const createBookdetails = async (req, res, next) => {
     };
 //Update (PUT) an old contact
 const updateBookdetails = async (req, res, next) => {
-        const UserId = new ObjectId(req.params.id);
+        const BookId = new ObjectId(req.params.id);
         const updatedDetails = {
             bookISBN: req.body.bookISBN,
             bookTitle: req.body.bookTitle,
@@ -69,7 +69,7 @@ const updateBookdetails = async (req, res, next) => {
             .getDatabase()
             .db()
             .collection('books')
-            .replaceOne({ _id: UserId}, updatedDetails);
+            .replaceOne({ _id: BookId}, updatedDetails);
         console.log(resultBack.modifiedCount + 'bookdetails was updated');
         if(resultBack.modifiedCount > 0) {
             res.status(204).send(resultBack.modifiedCount + "bookdetails was updated.");
@@ -80,12 +80,12 @@ const updateBookdetails = async (req, res, next) => {
 
 //Delete (DELETE) a contact
 const deleteBookdetails = async (req, res, next) => {
-        const UserId = new ObjectId(req.params.id);
+        const BookId = new ObjectId(req.params.id);
         const resultBack = await mongodb
             .getDatabase()
             .db()
             .collection('books')
-            .deleteOne({ _id: UserId}, true);
+            .deleteOne({ _id: BookId}, true);
         console.log(resultBack.deletedCount + 'bookdetails was deleted.');
         if(resultBack.acknowledged) {
             res.status(200).send(resultBack.deletedCount + "bookdetails was deleted.");

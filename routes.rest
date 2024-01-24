@@ -23,13 +23,13 @@ POST http://localhost:8085/books HTTP/1.1
 Content-Type: application/json
 
 {
-    "bookISBN": "",
-    "bookTitle": "",
-    "bookDescription": "",
-    "authorName": "",
-    "releaseDate": "",
-    "publisher": "",
-    "price": "",
+    "bookISBN": "9781491939420",
+    "bookTitle": "Think Python",
+    "bookDescription": "If you want to learn how to program, working with Python is an excellent way to start.",
+    "authorName": "Allen B. Downey",
+    "releaseDate": "2015",
+    "publisher": "O'Reilly Media, Green Tea Press",
+    "price": "$34.00",
 }
 
 ### Update Book Details  (By ID)
@@ -77,13 +77,13 @@ POST https://project2-part1-sos6.onrender.com/books HTTP/1.1
 Content-Type: application/json
 
 {
-    "bookISBN": "",
-    "bookTitle": "",
-    "bookDescription": "",
-    "authorName": "",
-    "releaseDate": "",
-    "publisher": "",
-    "price": "",
+    "bookISBN": "9781491939420",
+    "bookTitle": "Think Python",
+    "bookDescription": "If you want to learn how to program, working with Python is an excellent way to start.",
+    "authorName": "Allen B. Downey",
+    "releaseDate": "2015",
+    "publisher": "O'Reilly Media, Green Tea Press",
+    "price": "$34.00",
 }
 
 ### Update Book Details (By ID)
