@@ -3,6 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 //Read (GET) all contacts in the database
 const getAllBooksdetails = async (req, res) => {
+    //#swagger.Tags = ['books']
       const result = await mongodb
             .getDatabase()
             .db()
@@ -16,7 +17,8 @@ const getAllBooksdetails = async (req, res) => {
     };
 
 //Read (GET) one contact (based on Id) in the database
-const getSingleBookdetails = async (req, res) => { 
+const getSingleBookdetails = async (req, res) => {
+    //#swagger.Tags = ['books'] 
          const bookId = new ObjectId(req.params.id);
         const result = await mongodb            
             .getDatabase()
@@ -31,7 +33,8 @@ const getSingleBookdetails = async (req, res) => {
 
 //Create (POST) a new contact
 const createBookdetails = async (req, res, next) => {
-        //New Contact Info
+    //#swagger.Tags = ['books']
+
         const newBookdetails = {
             bookISBN: req.body.bookISBN,
             bookTitle: req.body.bookTitle,
@@ -55,6 +58,7 @@ const createBookdetails = async (req, res, next) => {
     };
 //Update (PUT) an old contact
 const updateBookdetails = async (req, res, next) => {
+    //#swagger.Tags = ['books']
         const BookId = new ObjectId(req.params.id);
         const updatedDetails = {
             bookISBN: req.body.bookISBN,
@@ -80,6 +84,7 @@ const updateBookdetails = async (req, res, next) => {
 
 //Delete (DELETE) a contact
 const deleteBookdetails = async (req, res, next) => {
+    //#swagger.Tags = ['books']
         const BookId = new ObjectId(req.params.id);
         const resultBack = await mongodb
             .getDatabase()
